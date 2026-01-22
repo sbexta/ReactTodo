@@ -1,10 +1,20 @@
-function TodoItem () {
+import { FaCheckCircle, FaRegCircle, FaTrash } from "react-icons/fa";
+
+
+function TodoItem (props) {
   return(
-    <li>
-      <span>V</span>
-        <p>Llorar</p>
-      <span>X</span>
-    </li>
+    <li className={props.completed ? "completed" : ""}>
+  <span className="icon">
+    {props.completed ? <FaCheckCircle /> : <FaRegCircle />}
+  </span>
+
+  <p>{props.text}</p>
+
+  <span className="icon delete">
+    <FaTrash />
+  </span>
+</li>
+
   );
 }
 

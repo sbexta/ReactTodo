@@ -1,0 +1,18 @@
+input {
+  display: block;
+  margin: 40px auto;   /* centra horizontalmente */
+  width: 80%;          /* ocupa casi toda la pantalla en móvil */
+  max-width: 400px;    /* no crece más en pantallas grandes */
+
+  background-color: #4a5585;
+  border: 1px solid #334155;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+}

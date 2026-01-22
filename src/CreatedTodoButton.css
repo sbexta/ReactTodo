@@ -1,0 +1,39 @@
+button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 56px;
+  height: 56px;
+
+  font-size: 2rem;        /* tamaño correcto */
+  color: white;
+  background-color: #10b981;
+
+  border: none;
+  border-radius: 50%;     /* botón redondo */
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:hover {
+    color: #059669; /* verde oscuro al pasar el ratón */
+}
+
+@media (max-width: 600px) {
+  button {
+    padding: 10px 14px;
+    right: 0px; 
+  }
+}

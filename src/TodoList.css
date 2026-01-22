@@ -1,0 +1,41 @@
+ul {
+  width: 90%;        /* se adapta en pantallas pequeñas */
+  max-width: 600px;  /* límite en pantallas grandes */
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: flex;              /* pone los elementos en fila */
+  align-items: center;        /* los centra verticalmente */
+  justify-content: space-between; /* uno a cada lado */
+
+  background-color: #343e6b;
+  color: #111827;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+
+  transition: all 0.3s ease; /* animación suave */
+}
+
+li:hover {
+  background-color: #1e293b;
+  transform: scale(1.01);
+}
+
+li.completed {
+  background-color: #043528; /* verde oscuro */
+  color: #478d69;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete {
+  color: #f87171;
+}
